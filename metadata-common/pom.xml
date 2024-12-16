@@ -6,10 +6,10 @@
     <parent>
         <groupId>com.echoclsaa</groupId>
         <artifactId>metadata</artifactId>
-        <version>0.0.1</version>
+        <version>0.0.2-SNAPSHOT</version>
     </parent>
 
-    <artifactId>metadata-model</artifactId>
+    <artifactId>metadata-common</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

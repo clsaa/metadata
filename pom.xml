@@ -6,7 +6,7 @@
 
     <groupId>com.echoclsaa</groupId>
     <artifactId>metadata</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>metadata</name>
     <description>metadata is metadata tools in Java</description>
@@ -22,7 +22,11 @@
         </developer>
     </developers>
     <modules>
-        <module>metadata-model</module>
+        <module>metadata-core</module>
+        <module>metadata-rule-engine</module>
+        <module>metadata-dag</module>
+        <module>metadata-common</module>
+        <module>metadata-invoker</module>
     </modules>
     <scm>
         <url>https://github.com/clsaa/metadata</url>
@@ -53,7 +57,13 @@
         <log4j.version>1.2.17</log4j.version>
     </properties>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
